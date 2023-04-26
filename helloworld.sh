@@ -1,3 +1,3 @@
 echo "Hello World"
-str = "I am working perfectly!"
-echo $str
+str ="I am working perfectly!"
+echo str
