@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# Script Name: codechallenge2seattleops201                 
+# Author:                       Marcelo Clark
+# Date of latest revision:      04/26/2023
+# Purpose:                      Demonstrate the ability to use functions to show user login history
+
+# Declaration of variables
+
+# Declaration of functions
+print_login_history_users () {
+    echo "This is the login history:"
+    last
+}
+#last command used to show login history
+
+
+# Main
+print_login_history_users 
+print_login_history_users
+print_login_history_users
+
+
+
+# End
