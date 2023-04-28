@@ -14,4 +14,4 @@ folders=("dir1" "dir2" "dir3" "dir4")
 
 # Main
 echo ${folders[1]} 
-echo "Hello World"
+echo "test"
