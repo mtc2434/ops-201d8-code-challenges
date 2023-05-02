@@ -6,31 +6,49 @@
 
 # Declaration of variables
 ConditionalDirectories=("dira" "dirb" "dirc" "dird")
+x=1
+exist="These files already exist"
 
 # Declare functions
 
 # Main
 
 #while conditions are true, perform the if statement
-while true;
+while [ $x -lt 2 ]
     do 
     #if the files do exist. prints text
-        if [[ -e "${ConditionalDirectories[0]} ${ConditionalDirectories[1]}, ${ConditionalDirectories[2]} ${ConditionalDirectories[3]}" ]]
-            then 
-            echo "these directories exist"
+        if [[ -d "${ConditionalDirectories[0]} ${ConditionalDirectories[1]}, ${ConditionalDirectories[2]} ${ConditionalDirectories[3]}" ]]
+           
+            then
+                echo " "
+
+                
+           
+            
+             
              
              #if they dont exist, create the files
-                    else 
+                    else
+
+                        echo "These files already exist"
+
                         touch $(mkdir "dira")
                         touch $(mkdir "dirb")
                         touch $(mkdir "dirc")
                         touch $(mkdir "dird")
+                        
+                        exit
+
+                    
+                     
        
        #ends if statement
         
-        fi      
+        fi
 
-        done 
+        done   
+        
+        
         
    
             
