@@ -24,19 +24,18 @@ echo " whois output: "
     
     echo "dig output:"
     
-    #uses dig command 
+    #uses dig command for the domain variable
     
     dig $domain 
-
-
-
-
     
     echo "host output"
    
+   #uses the host command for the domain variable
     host $domain
 
     echo "nslookup output"
+    
+    #uses the nslookup command for the domain variable
             nslookup $domain
 
 
@@ -55,5 +54,7 @@ echo " whois output: "
     
     }
 
-
-    domain_info > "domaininfo.txt"
+#creates the textfile "domain.txt"
+touch "domaininfo.txt"
+# calls the function and tells it to put it into the text file
+domain_info > "domaininfo.txt"
