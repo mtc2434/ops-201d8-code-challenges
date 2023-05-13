@@ -25,7 +25,8 @@ netsh advfirewall firewall add rule name="ICMP Allow incoming V4 echo request" p
 Enable-PSremoting -Force
 
 #Remove bloatware
-Get-AppxPackage -name "microsoft.appname" | Remove-AppxPackage
+iex ((New-Object System.Net.WebClient).DownloadString('https://git.io/debloat'))
+
 
 # Enables Hypervisors
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V-All
